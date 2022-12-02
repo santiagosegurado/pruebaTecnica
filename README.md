@@ -1,3 +1,8 @@
+
+# Requisitos de Prueba
+![pruebaTecnica](pruebaTecnica.jpeg){width='200px'}
+
+
 # Instalación 🔧
 
 El Backend fue realizado con Express, TypeScript, Typegoose(ODM), JTW y MongoDB desplegado en Mongo Atlas
