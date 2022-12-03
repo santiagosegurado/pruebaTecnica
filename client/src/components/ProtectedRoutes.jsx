@@ -5,7 +5,7 @@ export const ProtectedRoutes = () => {
 
   if (!JSON.parse(localStorage.getItem("auth"))) {
     
-    return (<Navigate to='/login' /> )
+    return (<Navigate to='/register' /> )
   }
 
   return (<Outlet/>)

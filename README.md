@@ -3,6 +3,12 @@
 ![pruebaTecnica](pruebaTecnica.jpeg){width='200px'}
 
 
+# Aclaraciones
+No use varables de entorno para que les resulte mas facil desplegar la aplicacion
+
+
+
+
 # Instalación 🔧
 
 El Backend fue realizado con Express, TypeScript, Typegoose(ODM), JTW y MongoDB desplegado en Mongo Atlas
@@ -36,6 +42,11 @@ http://localhost:4000/api/user
 
 El Front esta realizado con React.js y React Redux, las rutas con React-Router-Dom 
 y los estilos con Material UI
+
+
+```
+http://127.0.0.1:5173/
+```
 
 _Antes de arracar el proyecto_
 

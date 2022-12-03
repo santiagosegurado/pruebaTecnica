@@ -1,7 +1,7 @@
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -44,7 +44,7 @@ export const Register = () => {
         <LockOutlinedIcon />
       </Avatar>
       <Typography component="h1" variant="h5">
-        Sign up
+        Registro
       </Typography>
       <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
         <Grid container spacing={2}>
@@ -97,11 +97,11 @@ export const Register = () => {
           variant="contained"
           sx={{ mt: 3, mb: 2 }}
         >
-          Sign Up
+          Iniciar Sesion
         </Button>
         <Grid container justifyContent="flex-end">
-          <Grid item>
-            <Link href="#" variant="body2">
+          <Grid item >
+            <Link to='/login' style={{fontFamily: 'Roboto'}}>
               Ya estas registrado? Inicia Sesion aqui!
             </Link>
           </Grid>

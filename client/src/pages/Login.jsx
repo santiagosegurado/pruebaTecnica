@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -38,7 +38,7 @@ export const Login = () => {
         <LockOutlinedIcon />
       </Avatar>
       <Typography component="h1" variant="h5">
-        Sign in
+        Login
       </Typography>
       <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
         <TextField
@@ -46,7 +46,7 @@ export const Login = () => {
           required
           fullWidth
           id="email"
-          label="Email Address"
+          label="Email"
           name="email"
           autoComplete="email"
           autoFocus
@@ -56,14 +56,10 @@ export const Login = () => {
           required
           fullWidth
           name="password"
-          label="Password"
+          label="Contraseña"
           type="password"
           id="password"
           autoComplete="current-password"
-        />
-        <FormControlLabel
-          control={<Checkbox value="remember" color="primary" />}
-          label="Remember me"
         />
         <Button
           type="submit"
@@ -71,17 +67,12 @@ export const Login = () => {
           variant="contained"
           sx={{ mt: 3, mb: 2 }}
         >
-          Sign In
+          Iniciar Sesion
         </Button>
         <Grid container>
-          <Grid item xs>
-            <Link href="#" variant="body2">
-              Forgot password?
-            </Link>
-          </Grid>
           <Grid item>
-            <Link href="#" variant="body2">
-              {"Don't have an account? Sign Up"}
+            <Link to='/register' style={{fontFamily: 'Roboto'}}>
+              No tenes una cuenta? 
             </Link>
           </Grid>
         </Grid>
